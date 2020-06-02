@@ -11,22 +11,13 @@
 *.gch
 *.pch
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
 # Executables
 *.exe
 *.out
 *.app
+
+visualc/.vs/
+visualc/Debug/
+visualc/Release/
+visualc/EffectBuild/Debug/
+visualc/EffectBuild/Release/
