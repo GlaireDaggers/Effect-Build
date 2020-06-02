@@ -136,9 +136,9 @@ int main(int argc, char* argv[])
 		flags |= D3DCOMPILE_WARNINGS_ARE_ERRORS;
 
 	if (packMode == 1)
-		flags |= D3DCOMPILE_PACK_MATRIX_ROW_MAJOR;
-	else if(packMode == 2)
 		flags |= D3DCOMPILE_PACK_MATRIX_COLUMN_MAJOR;
+	else if(packMode == 2)
+		flags |= D3DCOMPILE_PACK_MATRIX_ROW_MAJOR;
 
 	// make outfile just be inFile with a different extension
 	if (outFile.empty())
