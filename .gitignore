@@ -19,5 +19,7 @@
 visualc/.vs/
 visualc/Debug/
 visualc/Release/
+visualc/x64/
 visualc/EffectBuild/Debug/
 visualc/EffectBuild/Release/
+visualc/EffectBuild/x64/

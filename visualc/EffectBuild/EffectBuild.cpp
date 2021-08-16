@@ -175,6 +175,13 @@ int main(int argc, char* argv[])
 
 	if (result == S_OK)
 	{
+		// were there any warnings?
+		if (ppErrorMsgs != nullptr)
+		{
+			char *msg = (char *)ppErrorMsgs->GetBufferPointer();
+			printf(msg);
+		}
+
 		char* memPtr = (char*)ppCode->GetBufferPointer();
 		size_t size = ppCode->GetBufferSize();
 
@@ -191,7 +198,7 @@ int main(int argc, char* argv[])
 		outStream.write(memPtr, size);
 		outStream.close();
 
-		printf("Compile successful! Wrote %s (%d bytes)\n", outFile.c_str(), size);
+		printf("Compile successful! Wrote %s (%d bytes)\n", outFile.c_str(), (int)size);
 		return 0;
 	}
 	else
